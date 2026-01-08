@@ -19,6 +19,16 @@ Appends the stolen access token as a query parameter.
 
 Loading the image sends the token to the attacker’s server silently.
 
+## What needs to be configured
+
+Replace `TTACKBOX_IP` with your attacker machine IP.
+
+Ensure a listener/web server is running on the specified port `(e.g. 8081)`.
+
+OAuth flow must return tokens in the URL fragment `(Implicit Flow)`.
+
+Victim must execute the injected JavaScript `(DOM XSS present)`.
+
 ## Key Points
 
 Attack Type: DOM-based XSS
